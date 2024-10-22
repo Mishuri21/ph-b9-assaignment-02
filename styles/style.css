@@ -7,7 +7,7 @@
 
 /* Shared styles code */
 body {
-    background-color: black;
+    background-color: #000000;
 }
 
 .set-section-width {
@@ -16,37 +16,50 @@ body {
 }
 
 .para-description {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.434);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
-    background-color: orange;
-    padding: 15px 30px;
-    border: 1px solid orange;
-    border-radius: 50px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 15px 40px;
+    border: 1px solid rgb(230, 83, 60);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border: 1px solid #E6533C;
+}
+
+.btn-secondary:hover {
+    border: 1px solid #E6533C;
 }
 
 .btn-secondary {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
-    background-color: transparent;
-    padding: 15px 30px;
+    border-radius: 42px;
+    background: black;
+    padding: 15px 40px;
     border: 1px solid white;
-    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .margin-top {
     margin-top: 15px;
 }
 
-/* header section styles start */
-
-/* banner styles start */
 /* navbar styles */
 .navbar {
     display: flex;
@@ -57,7 +70,7 @@ body {
 
 .nav-title {
     color: rgb(230, 83, 60);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 800;
 }
 
@@ -85,13 +98,15 @@ body {
 .navbar ul li:first-child {
     background-color: #E6533C;
     padding: 10px 25px;
+    border: 1px solid #E6533C;
     border-radius: 40px;
+    transition: 0.5s;
 }
 
 .navbar ul li:first-child:hover {
     background-color: black;
     border: 1px solid white;
-    color: white;
+    color: #E6533C;
 }
 
 .hamburger-icon {
@@ -102,6 +117,7 @@ body {
     color: white;
 }
 
+/* banner styles */
 .banner {
     display: flex;
     justify-content: space-between;
@@ -114,61 +130,69 @@ body {
 }
 
 .banner-title {
-    font-size: 72px;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
 }
 
 .banner-btn-container {
     display: flex;
     gap: 15px;
-
 }
 
-.banner-img>img {
+.banner-img {
+    position: relative;
+    margin-right: 50px;
+}
+
+.banner-img img {
     width: 100%;
 }
 
 /* banner badge styles  */
 .banner-badge-1 {
-    width: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
     color: white;
-    background-color: rgba(240, 248, 255, 0.308);
-    padding: 15px 15px;
-    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    padding: 15px 25px;
     position: absolute;
-    top: 140px;
-    right: 120px;
+    top: 130px;
+    right: 0px;
 }
 
 .badge-title {
-    font-size: 32px;
-
+    font-size: 2.30rem;
 }
 
 .badge-description {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.501);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
 }
 
 /* badge 2 styles */
 .banner-badge-2 {
-    width: max-content;
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
-    background-color: rgba(240, 248, 255, 0.308);
     padding: 15px 15px;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
     position: absolute;
-    top: 440px;
-    right: 420px;
+    left: -100px;
+    bottom: 60px;
 }
 
 .banner-badge-shape {
     width: 40px;
     height: 40px;
-    background-color: orange;
+    background-color: #E6533C;
     border-radius: 50%;
 }
 
@@ -182,41 +206,44 @@ body {
 /* main section styles start */
 .change-habits {
     text-align: center;
+    margin-top: 50px;
 }
 
 .habits-title {
     color: white;
-    font-size: 38px;
+    font-size: 3rem;
     margin: 20px 0px;
 }
 
 .habits-img-container {
     display: flex;
+    gap: 40px;
     margin: 60px 0px;
 }
 
 .habits-img-container img {
+    width: 80%;
     border-radius: 50%;
 }
 
 .change-img-title {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     margin: 20px 0px 5px 0px;
 }
 
-/* run an extra styles start */
+/* run an extra styles */
 .run-extra {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: rgba(128, 128, 128, 0.349);
-    border-radius: 15px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
     padding: 40px;
 }
 
 .run-extra-title {
-    font-size: 38px;
+    font-size: 3rem;
     color: white;
     margin-bottom: 15px;
 }
@@ -227,16 +254,80 @@ body {
 }
 
 /* calculator bmi styles */
-.bmi-calculator-container {
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.bmi-calculator-section {
+    background: rgb(34, 34, 34);
+    margin: 100px 0px;
 }
 
-.calculator-title {
-    color: white;
+.bmi-calculator {
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-chart,
+.bmi-calc {
+    width: 50%;
+    padding: 20px;
+}
+
+h2 {
     font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #555;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff5733;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.calculate-btn:hover {
+    background-color: #ff7645;
 }
 
 /* meet our team styles */
@@ -246,7 +337,7 @@ body {
 }
 
 .meet-our-team-title {
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     margin-bottom: 10px;
 }
@@ -258,39 +349,57 @@ body {
     margin: 60px 0px;
 }
 
-/* .our-team-img-box-item {
-    width: 100%;
-} */
+.team-img-box {
+    position: relative;
+}
 
-.our-team-img-box-item img {
+.team-img-box img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 15px;
     object-fit: cover;
+    filter: brightness(80%);
+}
 
+.team-box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    color: white;
+}
+
+.team-box-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-box-text p {
+    font-size: 0.9rem;
 }
 
 /* footer styles */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px 0px;
+}
+
 .footer-content-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 20px 0px;
 }
 
 .footer-title {
-    font-size: 32px;
-    color: orange;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #E6533C;
 }
 
 .footer-box-title {
     color: white;
-    font-size: 1.50rem;
-}
-
-.footer-description {
-    text-align: center;
-    margin: 20px 0px;
+    font-size: 1.70rem;
+    margin-bottom: 25px;
 }
 
 .footer-box-link-item {
@@ -300,16 +409,32 @@ body {
 
 .footer-box-link-item a {
     text-decoration: none;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.565);
+    font-size: 1.30rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.footer-hr {
+    opacity: 50%;
+    margin: 50px 0px;
+}
+
+.footer-description {
+    text-align: center;
+    margin: 10px 0px;
 }
 
 /* Responsive styles code */
 @media screen and (max-width: 576px) {
+    .set-section-width {
+        width: 90%;
+    }
+
     /* navbar responsive */
     .navbar ul {
         display: none;
     }
+
     .hamburger-icon {
         display: block;
         font-size: 18px;
@@ -324,16 +449,6 @@ body {
     btn {
         font-size: 18px;
         font-weight: 500;
-    }
-
-    .banner-badge-1 {
-        top: 500px;
-        right: 70px;
-    }
-
-    .banner-badge-2 {
-        top: 680px;
-        left: 100px;
     }
 
     /* change habits styles */

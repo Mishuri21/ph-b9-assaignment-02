@@ -33,12 +33,13 @@
                 <i class="fa-solid fa-bars nav-icon"></i>
             </div>
         </nav>
-        <!-- banner section start -->
+        <!-- Banner section start -->
         <div class="banner">
             <div class="banner-content">
                 <h1 class="banner-title">
-                    Get body in <br>
-                    <em>shape</em> & stayhealthy
+                    Get body in <br> 
+                    <em>shape</em> & stay <br>
+                    healthy
                 </h1>
                 <p class="para-description">
                     A huge selection of health and fitness content, healthy recipes and transformation <br>stories to help you get fit and stay fit!
@@ -59,7 +60,7 @@
                             Free Workout Videos
                         </p>
                     </div>
-                    <div class="banner-badge banner-badge-2">
+                    <div class="banner-badge-2">
                         <div>
                             <p class="banner-badge-shape"></p>
                         </div>
@@ -68,7 +69,7 @@
                                 350+
                             </h3>
                             <p class="badge-description">
-                                Free Workout Videos
+                                Video Tutorial
                             </p>
                         </div>
                     </div>
@@ -124,7 +125,58 @@
             </div>
         </section>
         <section class="bmi-calculator-section">
-            
+            <div class="bmi-calculator set-section-width">
+                <!-- BMI Chart Section -->
+                <div class="bmi-chart">
+                    <h2>BMI Calculator Chart</h2>
+                    <p>BMI stands for Body Mass Index, a useful tool for assessing whether your body weight is healthy.</p>
+                    <table>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 – 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 – 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <!-- BMI Calculator Form Section -->
+                <div class="bmi-calc">
+                    <h2>Calculate your BMI</h2>
+                    <p>We believe fitness should be accessible to everyone, regardless of income or access to a gym.</p>
+        
+                    <input type="number" placeholder="Height (cm)">
+                    <input type="number" placeholder="Weight (kg)">
+                    <input type="number" placeholder="Age">
+                    <select>
+                        <option value="" disabled selected>Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select>
+                        <option value="" disabled selected>Select an activity factor</option>
+                        <option value="low">Low Activity</option>
+                        <option value="moderate">Moderate Activity</option>
+                        <option value="high">High Activity</option>
+                    </select>
+        
+                    <button class="calculate-btn">Calculate</button>
+                </div>
+            </div>
         </section>
         <section class="meet-our-team-section">
             <div class="meet-our-team set-section-width">
@@ -133,29 +185,47 @@
                     <p class="para-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
                 </div>
                 <div class="our-team-img-box-container">
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer1.png" alt="">
-                        <div class="team-info">
-                            <h4>Jerome Bell</h4>
-                            <p class="para-description">
-                                Trainer
-                            </p>
+                        <div class="team-box-text">
+                            <h3>Jerome Bell</h3>
+                            <p>Trainer</p>
                         </div>
                     </div>
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer2.png" alt="">
+                        <div class="team-box-text">
+                            <h3>Cameron Williamson</h3>
+                            <p>Trainer</p>
+                        </div>
                     </div>
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer3.png" alt="">
+                        <div class="team-box-text">
+                            <h3>Darrell Steward</h3>
+                            <p>Trainer</p>
+                        </div>
                     </div>
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer4.png" alt="">
+                        <div class="team-box-text">
+                            <h3>Dianne Russell</h3>
+                            <p>Trainer</p>
+                        </div>
                     </div>
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer5.png" alt="">
+                        <div class="team-box-text">
+                            <h3>Cody Fisher</h3>
+                            <p>Trainer</p>
+                        </div>
                     </div>
-                    <div class="our-team-img-box-item">
+                    <div class="team-img-box">
                         <img src="./images/trainer6.png" alt="">
+                        <div class="team-box-text">
+                            <h3>Theresa Webb</h3>
+                            <p>Trainer</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,7 +263,7 @@
                     </ul>
                 </div>
             </div>
-            <hr>
+            <hr class="footer-hr">
             <p class="para-description footer-description">
                 All right reserved &copy;Fitness 2024
             </p>
